@@ -19,34 +19,30 @@ public class Auto {
     		if (asientos[i] != null) {
     			a++;
     		}
-			
 		}
-    		return a;
-    	
+    	return a;
     }
     
     void verificarIntegridad(){
     	Asiento registroA = new Asiento();
     	Motor registroM = new Motor();
+    	boolean a;
+    	for(int i = 0; i < asientos.length; i++) {
+    		
+    		if(asientos[i].equals(registroA) && asientos[i].equals(registroM)){
+    			a = true;
+    		}
+    		else
+    			a = false;
+    		
+    	}
+    	if (a = true) 
+    		System.out.println("Auto original");
     	
-    	
-    	
-    	//Tener en cuenta para la Clase Auto que: 
-    		//- cantidadCreados es un atributo de clase 
-    		//- El método de instancia cantidadAsientos() retornara la cantidad de asientos que 
-    		//efectivamente sean objetos Asiento en la lista del objeto Auto. 
-    		//- El método verificarIntegridad(), se encargara de revisar que el atributo registro 
-    		//de Motor, Auto y Cada Asiento sean el mismo, esto para ir en contra de la 
-    		//piratería de piezas. En caso de encontrar que un Asiento, el Auto o el Motor 
-    		//tiene un registro diferente al de los demás retornara el mensaje “Las piezas no 
-    		//son originales” en caso contrario, retornara “Auto original” 
-
-
-    	
+    	else
+    		System.out.println("Las piezas no son originales");
+    			
     }
-	
-	
-	
 }
 
 
