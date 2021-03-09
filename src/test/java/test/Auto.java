@@ -1,6 +1,7 @@
 
 package test; 
 
+
 public class Auto {
   
 	String modelo;

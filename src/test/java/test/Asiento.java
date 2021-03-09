@@ -1,5 +1,5 @@
 package test; 
-
+//
 public class Asiento {
 
 	String color;
