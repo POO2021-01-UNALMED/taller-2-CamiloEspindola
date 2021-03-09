@@ -30,13 +30,15 @@ public class Auto {
     	
     	
     	for(int i = 0; i < asientos.length; i++) {
-    		
+    		if(asientos[i] == null)
+    			continue;
     	    if(asientos[i].registro == (registroA.registro) && asientos[i].registro==(registroM.registro)&&registroA.registro==registroM.registro){
     			a = 0;
     		}
-    		else
+    		else {
     			a = 1;
     		    break;
+    		}
     	}
     	String b ="Auto original";
     	String c ="Las piezas no son originales";
