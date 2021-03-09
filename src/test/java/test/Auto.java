@@ -30,7 +30,7 @@ public class Auto {
     	
     	
     	for(int i = 0; i < asientos.length; i++) {
-    		if(asientos[i] == null)
+    		if(asientos[i].registro == 0)
     			continue;
     		else if(asientos[i].registro == (registroA.registro) && asientos[i].registro==(registroM.registro)){
     			a = 0;
@@ -39,8 +39,8 @@ public class Auto {
     			a = 1;
     		    break;
     	}
-    	String b = "Auto original";
-    	String c = "Las piezas no son originales";
+    	String b = ("Auto original");
+    	String c = ("Las piezas no son originales");
     	if (a == 0) 
     		return b;
     	else
