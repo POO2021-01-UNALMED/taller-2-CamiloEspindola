@@ -27,8 +27,11 @@ public class Auto {
     	Auto registroA = new Auto();
     	Motor registroM = new Motor();
     	int a = 0;
+    	
+    	
     	for(int i = 0; i < asientos.length; i++) {
-    		
+    		if(asientos[i] == null)
+    			continue;
     		if(asientos[i].equals(registroA.registro) && asientos[i].equals(registroM.registro)){
     			a = 0;
     		}

@@ -4,6 +4,7 @@ public class Asiento {
 	int precio;
 	int registro;
 
+	
 	void cambiarColor(String color) {
 		if (color.equals("rojo"))
 			this.color = color;
