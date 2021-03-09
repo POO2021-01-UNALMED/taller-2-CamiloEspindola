@@ -30,9 +30,8 @@ public class Auto {
     	
     	
     	for(int i = 0; i < asientos.length; i++) {
-    		if(asientos[i].equals(null))
-    			continue;
-    		else if(asientos[i].registro == (registroA.registro) && asientos[i].registro==(registroM.registro)&&registroA.registro==registroM.registro){
+    		
+    	    if(asientos[i].registro == (registroA.registro) && asientos[i].registro==(registroM.registro)&&registroA.registro==registroM.registro){
     			a = 0;
     		}
     		else
