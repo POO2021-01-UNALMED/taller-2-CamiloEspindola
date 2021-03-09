@@ -23,7 +23,7 @@ public class Auto {
     	return a;
     }
     
-    public void verificarIntegridad(){
+    String verificarIntegridad(){
     	Auto registroA = new Auto();
     	Motor registroM = new Motor();
     	int a = 0;
@@ -36,11 +36,12 @@ public class Auto {
     			a = 1;
     		    break;
     	}
+    	String b = "Auto original";
+    	String c = "Las piezas no son originales";
     	if (a == 0) 
-    		System.out.println("Auto original");
-    	
+    		return b;
     	else
-    		System.out.println("Las piezas no son originales");
+    		return c;
     			
     }
 }
