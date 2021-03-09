@@ -1,7 +1,6 @@
 
 package test; 
 
-
 public class Auto {
   
 	String modelo;
@@ -24,20 +23,20 @@ public class Auto {
     	return a;
     }
     
-    void verificarIntegridad(){
+    public void verificarIntegridad(){
     	Auto registroA = new Auto();
     	Motor registroM = new Motor();
-    	boolean a;
+    	int a = 0;
     	for(int i = 0; i < asientos.length; i++) {
     		
-    		if(asientos[i].equals(registroA) && asientos[i].equals(registroM)){
-    			a = true;
+    		if(asientos[i].equals(registroA.registro) && asientos[i].equals(registroM.registro)){
+    			a = 0;
     		}
     		else
-    			a = false;
+    			a = 1;
     		    break;
     	}
-    	if (a = true) 
+    	if (a == 0) 
     		System.out.println("Auto original");
     	
     	else
