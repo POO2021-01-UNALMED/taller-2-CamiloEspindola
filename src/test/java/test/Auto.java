@@ -25,7 +25,7 @@ public class Auto {
     }
     
     void verificarIntegridad(){
-    	Asiento registroA = new Asiento();
+    	Auto registroA = new Auto();
     	Motor registroM = new Motor();
     	boolean a;
     	for(int i = 0; i < asientos.length; i++) {
@@ -35,7 +35,7 @@ public class Auto {
     		}
     		else
     			a = false;
-    		
+    		    break;
     	}
     	if (a = true) 
     		System.out.println("Auto original");
