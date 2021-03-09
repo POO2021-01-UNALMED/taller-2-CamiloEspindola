@@ -24,19 +24,22 @@ public class Auto {
     }
     
     String verificarIntegridad(){
-    	Auto registroA = new Auto();
-    	Motor registroM = new Motor();
+    	
     	int a = 0;
     	
-    	
     	for(int i = 0; i < asientos.length; i++) {
-    		if(asientos[i] == null)
+    		if(asientos[i]==null) {
+    			
     			continue;
-    	    if(asientos[i].registro == (registroA.registro) && asientos[i].registro==(registroM.registro)&&registroA.registro==registroM.registro){
+    			
+    		}
+   
+    		else if(asientos[i].registro == (Auto.this.registro) && asientos[i].registro==(motor.registro)){
     			a = 0;
     		}
     		else {
     			a = 1;
+    		
     		    break;
     		}
     	}
